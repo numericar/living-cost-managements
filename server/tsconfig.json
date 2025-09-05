@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",       // กำหนดให้ compile javascript ออกมาเป็นเวอร์ชันอะไร
+    "module": "commonjs",     // กำหนดให้ build javascript ออกมาในรูปแบบไหน (commonjs, esnext)
+    "rootDir": "src",         // กำหนดที่อยู่ของไฟล์ typescript
+    "outDir": "dist",         // กำหนดที่อยู่ของไฟล์ javascript หลัง compile
+    "esModuleInterop": true,  // ทำให้สามารถ import module ง่ายขึ้น
+    "strict": true            // ตั้งค่าให้ typescript ตรวจสอบ type แบบเข้มงวด
+  }
+}
