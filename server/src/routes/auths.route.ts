@@ -41,4 +41,26 @@ router.get("/health-check", authController.healthCheck);
  */
 router.post("/sign-up", authController.signUp);
 
+/**
+ * @swagger
+ * /api/v1/auths/sign-in:
+ *  post:
+ *      summary: Login user
+ *      requestBody:
+ *          required: true
+ *          content:
+ *              application/json:
+ *                  schema:
+ *                      type: object
+ *                      properties:
+ *                          email:
+ *                              type: string
+ *                          password:
+ *                              type: string
+ *      responses:
+ *          200:
+ *              description: user authentication successful
+ */
+router.post("/sign-in", authController.signIn);
+
 export default router;
