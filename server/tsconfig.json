@@ -5,6 +5,7 @@
     "rootDir": "src",         // กำหนดที่อยู่ของไฟล์ typescript
     "outDir": "dist",         // กำหนดที่อยู่ของไฟล์ javascript หลัง compile
     "esModuleInterop": true,  // ทำให้สามารถ import module ง่ายขึ้น
-    "strict": true            // ตั้งค่าให้ typescript ตรวจสอบ type แบบเข้มงวด
+    "strict": true,           // ตั้งค่าให้ typescript ตรวจสอบ type แบบเข้มงวด,
+    "typeRoots": ["./src/types", "./node_modules/@types"]
   }
 }

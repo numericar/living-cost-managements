@@ -30,3 +30,13 @@ export function resourceConflict(res: Response, message: string) {
     
     return res.status(409).json(response);
 }
+
+export function unauthorized(res: Response) {
+    const response: IBaseResponse<null> = {
+        isSuccess: false,
+        message: "Unauthorized",
+        data: null
+    };
+    
+    return res.status(401).json(response);
+}
