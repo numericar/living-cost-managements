@@ -7,5 +7,6 @@ CREATE TABLE living_cost_items (
     item_type TINYINT UNSIGNED NOT NULL,
     is_main_living TINYINT(1) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (cover_photo_id) REFERENCES item_photos(cover_photo_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
