@@ -2,14 +2,14 @@
 Platform for managing personal living expenses
 
 ## stacks
-frontend
+### frontend
 <img src="https://skillicons.dev/icons?i=typescript,react,redux"/>
 
-backend
+### backend
 <img src="https://skillicons.dev/icons?i=typescript,express"/>
 
-database
+### database
 <img src="https://skillicons.dev/icons?i=mysql"/>
 
-Others
+### Others
 <img src="https://skillicons.dev/icons?i=figma,github,vite,postman"/>
