@@ -41,4 +41,16 @@ router.get("/health-check", boxsController.healthCheck);
  */
 router.post("", [authMiddleware], boxsController.createBoxs);
 
+/**
+ * @swagger
+ * /api/v1/boxs:
+ *      get:
+ *          summary: get living cost profiles
+ *          tags: [Boxs]
+ *          responses:
+ *              200:
+ *                  description: list of living cost profile
+ */
+router.get("", [authMiddleware], boxsController.getBoxs);
+
 export default router;
