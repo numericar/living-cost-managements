@@ -9,6 +9,7 @@ const router: Router = express.Router();
  * /api/v1/auths/health-check:
  *   get:
  *     summary: health check api
+ *     tags: [Auths]
  *     responses:
  *       200:
  *         description: successful
@@ -20,6 +21,7 @@ router.get("/health-check", authController.healthCheck);
  * /api/v1/auths/sign-up:
  *   post:
  *     summary: Register user
+ *     tags: [Auths]
  *     requestBody:
  *       required: true
  *       content:
@@ -46,6 +48,7 @@ router.post("/sign-up", authController.signUp);
  * /api/v1/auths/sign-in:
  *  post:
  *      summary: Login user
+ *      tags: [Auths]
  *      requestBody:
  *          required: true
  *          content:
