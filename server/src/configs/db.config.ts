@@ -7,5 +7,6 @@ export const db = mysql.createPool({
     database: "living-cost-managements-db",
     waitForConnections: true,
     connectionLimit: 10,
-    queueLimit: 0 
+    queueLimit: 0,
+    decimalNumbers: true
 });

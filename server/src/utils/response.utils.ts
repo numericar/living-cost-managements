@@ -40,3 +40,13 @@ export function unauthorized(res: Response) {
     
     return res.status(401).json(response);
 }
+
+export function notFound(res: Response) {
+    const response: IBaseResponse<null> = {
+        isSuccess: false,
+        message: "Content not found",
+        data: null
+    };
+    
+    return res.status(404).json(response);
+}

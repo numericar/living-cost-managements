@@ -50,7 +50,22 @@ router.post("", [authMiddleware], boxsController.createBoxs);
  *          responses:
  *              200:
  *                  description: list of living cost profile
+ *                  content:
+ *                      application/json:
+ *                          schema:
+ *                              type: array
+ *                              properties:
+ *                                  id:
+ *                                      type: integer
+ *                                  profileName:
+ *                                      type: string
+ *                                  proviceName:
+ *                                      type: string
+ *                                  countyName:
+ *                                      type: string
  */
 router.get("", [authMiddleware], boxsController.getBoxs);
+
+router.get("/:boxId", [authMiddleware], boxsController.getBoxById);
 
 export default router;
